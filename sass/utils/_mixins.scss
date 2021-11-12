@@ -1,0 +1,15 @@
+@mixin borderedWithoutTop(
+  $width: 1px,
+  $type: solid,
+  $color: getColor('border-default')
+) {
+  border-right: $width $type $color;
+  border-bottom: $width $type $color;
+  border-left: $width $type $color;
+}
+
+@mixin centeredFlex($type: flex) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+}

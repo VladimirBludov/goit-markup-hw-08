@@ -1,0 +1,32 @@
+.clients__list {
+  display: flex;
+}
+
+.clients__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients__link {
+  @include centeredFlex();
+
+  min-width: 170px;
+  min-height: 92px;
+  border: 1px solid getColor('icon-primary');
+  border-radius: 4px;
+
+  color: getColor('icon-primary');
+
+  transition: color 250ms $animation-cubic, border-color 250ms $animation-cubic;
+
+  &:hover,
+  &:focus {
+    color: getColor('accent');
+    border-color: getColor('accent');
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}

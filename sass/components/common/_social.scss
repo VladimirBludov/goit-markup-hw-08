@@ -1,0 +1,36 @@
+.social {
+  display: flex;
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social__link {
+  @include centeredFlex();
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 50%;
+
+  color: getColor('icon-primary');
+
+  transition: color 250ms $animation-cubic,
+    background-color 250ms $animation-cubic;
+
+  &:hover,
+  &:focus {
+    color: getColor('icon-third');
+    background-color: getColor('accent');
+  }
+
+  &--theme-footer {
+    color: getColor('icon-third');
+    background-color: getColor('icon-bg');
+  }
+}
+
+.social__icon {
+  fill: currentColor;
+}
