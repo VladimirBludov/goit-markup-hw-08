@@ -1,6 +1,8 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
 }
 
 .section__title {
@@ -8,7 +10,8 @@
 
   color: getColor('title-primary');
   font-weight: 700;
-  font-size: 36px;
+  // font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
