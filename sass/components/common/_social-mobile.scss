@@ -27,4 +27,8 @@
   letter-spacing: 0.02em;
 
   color: getColor('accent');
+
+  @media screen and (max-width: 414px) {
+    font-size: 14px;
+  }
 }

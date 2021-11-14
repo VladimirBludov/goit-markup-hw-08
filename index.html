@@ -144,7 +144,13 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="hero__button" type="button" data-modal-open>
+          <button
+            class="hero__button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="modal"
+            data-modal-open
+          >
             Заказать услугу
           </button>
         </div>
@@ -255,9 +261,13 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/team-1.jpg"
+                srcset="
+                  ./images/team-1-450.jpg    1x,
+                  ./images/team-1-450@2x.jpg 2x
+                "
+                src="./images/team-1-450.jpg"
                 alt="Фотография сотрудника"
-                width="270"
+                width="450"
               />
               <div class="team__content-container">
                 <h3 class="team__name">Игорь Демьяненко</h3>
@@ -297,9 +307,13 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/team-2.jpg"
+                srcset="
+                  ./images/team-2-450.jpg    1x,
+                  ./images/team-2-450@2x.jpg 2x
+                "
+                src="./images/team-2-450.jpg"
                 alt="Фотография сотрудника"
-                width="270"
+                width="450"
               />
               <div class="team__content-container">
                 <h3 class="team__name">Ольга Репина</h3>
@@ -339,9 +353,13 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/team-3.jpg"
+                srcset="
+                  ./images/team-3-450.jpg    1x,
+                  ./images/team-3-450@2x.jpg 2x
+                "
+                src="./images/team-3-450.jpg"
                 alt="Фотография сотрудника"
-                width="270"
+                width="450"
               />
               <div class="team__content-container">
                 <h3 class="team__name">Николай Тарасов</h3>
@@ -381,9 +399,13 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/team-4.jpg"
+                srcset="
+                  ./images/team-4-450.jpg    1x,
+                  ./images/team-4-450@2x.jpg 2x
+                "
+                src="./images/team-4-450.jpg"
                 alt="Фотография сотрудника"
-                width="270"
+                width="450"
               />
               <div class="team__content-container">
                 <h3 class="team__name">Михаил Ермаков</h3>
@@ -431,42 +453,42 @@
           <ul class="clients__list">
             <li class="clients__item">
               <a href="#" class="clients__link" aria-label="Компания">
-                <svg class="clients__icon" width="41" height="46.7">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#client-1"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a href="#" class="clients__link" aria-label="Компания">
-                <svg class="clients__icon" width="40" height="52">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#client-2"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a href="#" class="clients__link" aria-label="Компания">
-                <svg class="clients__icon" width="43.46" height="41.18">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#client-3"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a href="#" class="clients__link" aria-label="Компания">
-                <svg class="clients__icon" width="84.44" height="40.62">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#client-4"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a href="#" class="clients__link" aria-label="Компания">
-                <svg class="clients__icon" width="62.54" height="45.43">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#client-5"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a href="#" class="clients__link" aria-label="Компания">
-                <svg class="clients__icon" width="93.79" height="43.93">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#client-6"></use>
                 </svg>
               </a>
@@ -582,7 +604,7 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="modal modal--backdrop modal--is-hidden" data-modal>
+    <div class="modal modal--backdrop modal--is-hidden" id="modal" data-modal>
       <div class="modal__container">
         <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal__form" autocomplete="off">
@@ -601,7 +623,7 @@
             </div>
           </div>
           <div class="modal__field">
-            <label for="modal-tel" class="user-data__label">Телефон</label>
+            <label for="modal-tel" class="modal__label">Телефон</label>
             <div class="modal__input-container">
               <input
                 id="modal-tel"
