@@ -7,7 +7,15 @@
 
 .clients__item {
   margin: 15px;
-  flex-basis: calc((100% - 3 * 30px) / 2);
+
+  @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+
   // &:not(:last-child) {
   //   margin-right: 30px;
   // }
@@ -17,7 +25,6 @@
   @include centeredFlex();
   padding-top: 15px;
   padding-bottom: 15px;
-  // padding: 15px 51px;
 
   border: 1px solid getColor('icon-primary');
   border-radius: 4px;

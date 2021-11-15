@@ -142,39 +142,62 @@
           <h2 class="visually-hidden">Портфолио</h2>
 
           <!-- Filter list -->
-          <ul class="filter">
-            <li class="filter__item">
-              <button class="filter__button" type="button">Все</button>
-            </li>
-            <li class="filter__item">
-              <button class="filter__button" type="button">Веб-сайты</button>
-            </li>
-            <li class="filter__item">
-              <button class="filter__button" type="button">Приложения</button>
-            </li>
-            <li class="filter__item">
-              <button class="filter__button" type="button">Дизайн</button>
-            </li>
-            <li class="filter__item">
-              <button class="filter__button" type="button">Маркетинг</button>
-            </li>
-          </ul>
+          <div class="filter">
+            <ul class="filter__list">
+              <li class="filter__item">
+                <button class="filter__button" type="button">Все</button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__button" type="button">Веб-сайты</button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__button" type="button">Приложения</button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__button" type="button">Дизайн</button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__button" type="button">Маркетинг</button>
+              </li>
+            </ul>
+          </div>
 
           <!-- Works list -->
           <ul class="works">
             <li class="works__item">
               <a class="works__link" href="#">
                 <div class="works__img-container">
-                  <img
-                    class="works__img"
-                    src="./images/project-1.jpg"
-                    alt="Ноутбук с изображением сайта"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/works/project-1/project-1-354.webp    354w,
+                        ./images/works/project-1/project-1-354@2x.webp 708w,
+                        ./images/works/project-1/project-1-450.webp    450w,
+                        ./images/works/project-1/project-1-450@2x.webp 900w
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 768px) 354px, 450px"
+                    />
+                    <img
+                      class="works__img"
+                      srcset="
+                        ./images/works/project-1/project-1-354.jpg    354w,
+                        ./images/works/project-1/project-1-354@2x.jpg 708w,
+                        ./images/works/project-1/project-1-450.jpg    450w,
+                        ./images/works/project-1/project-1-450@2x.jpg 900w
+                      "
+                      src="./images/project-1/project-1-450.jpg"
+                      alt="Ноутбук с изображением сайта"
+                      sizes="(min-width: 768px) 354px, 450px"
+                    />
+                  </picture>
                   <p class="works__description">
-                    Технокряк это современная площадка распространения
-                    коронавируса. Компании используют эту платформу для
-                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                    <span>
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </span>
                   </p>
                 </div>
 
@@ -187,12 +210,31 @@
             <li class="works__item">
               <a class="works__link" href="#">
                 <div class="works__img-container">
-                  <img
-                    class="works__img"
-                    src="./images/project-2.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/works/project-2/project-2-354.webp    354w,
+                        ./images/works/project-2/project-2-354@2x.webp 708w,
+                        ./images/works/project-2/project-2-450.webp    450w,
+                        ./images/works/project-2/project-2-450@2x.webp 900w
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 768px) 354px, 450px"
+                    />
+                    <img
+                      class="works__img"
+                      srcset="
+                        ./images/works/project-2/project-2-354.jpg    354w,
+                        ./images/works/project-2/project-2-354@2x.jpg 708w,
+                        ./images/works/project-2/project-2-450.jpg    450w,
+                        ./images/works/project-2/project-2-450@2x.jpg 900w
+                      "
+                      src="./images/project-2/project-2-450.jpg"
+                      alt="Ноутбук с изображением сайта"
+                      sizes="(min-width: 768px) 354px, 450px"
+                    />
+                  </picture>
+
                   <p class="works__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -209,12 +251,30 @@
             <li class="works__item">
               <a class="works__link" href="#">
                 <div class="works__img-container">
-                  <img
-                    class="works__img"
-                    src="./images/project-3.jpg"
-                    alt=" Логотип ресторана Seafood"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/works/project-3/project-3-354.webp    354w,
+                        ./images/works/project-3/project-3-354@2x.webp 708w,
+                        ./images/works/project-3/project-3-450.webp    450w,
+                        ./images/works/project-3/project-3-450@2x.webp 900w
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 768px) 354px, 450px"
+                    />
+                    <img
+                      class="works__img"
+                      srcset="
+                        ./images/works/project-3/project-3-354.jpg    354w,
+                        ./images/works/project-3/project-3-354@2x.jpg 708w,
+                        ./images/works/project-3/project-3-450.jpg    450w,
+                        ./images/works/project-3/project-3-450@2x.jpg 900w
+                      "
+                      src="./images/project-3/project-3-450.jpg"
+                      alt="Ноутбук с изображением сайта"
+                      sizes="(min-width: 768px) 354px, 450px"
+                    />
+                  </picture>
                   <p class="works__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -231,12 +291,30 @@
             <li class="works__item">
               <a class="works__link" href="#">
                 <div class="works__img-container">
-                  <img
-                    class="works__img"
-                    src="./images/project-4.jpg"
-                    alt="Наушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/works/project-4/project-4-354.webp    354w,
+                        ./images/works/project-4/project-4-354@2x.webp 708w,
+                        ./images/works/project-4/project-4-450.webp    450w,
+                        ./images/works/project-4/project-4-450@2x.webp 900w
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 768px) 354px, 450px"
+                    />
+                    <img
+                      class="works__img"
+                      srcset="
+                        ./images/works/project-4/project-4-354.jpg    354w,
+                        ./images/works/project-4/project-4-354@2x.jpg 708w,
+                        ./images/works/project-4/project-4-450.jpg    450w,
+                        ./images/works/project-4/project-4-450@2x.jpg 900w
+                      "
+                      src="./images/project-4/project-4-450.jpg"
+                      alt="Ноутбук с изображением сайта"
+                      sizes="(min-width: 768px) 354px, 450px"
+                    />
+                  </picture>
                   <p class="works__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -253,12 +331,31 @@
             <li class="works__item">
               <a class="works__link" href="#">
                 <div class="works__img-container">
-                  <img
-                    class="works__img"
-                    src="./images/project-5.jpg"
-                    alt="Две разноцветные коробки"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/works/project-5/project-5-354.webp    354w,
+                        ./images/works/project-5/project-5-354@2x.webp 708w,
+                        ./images/works/project-5/project-5-450.webp    450w,
+                        ./images/works/project-5/project-5-450@2x.webp 900w
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 768px) 354px, 450px"
+                    />
+                    <img
+                      class="works__img"
+                      srcset="
+                        ./images/works/project-5/project-5-354.jpg    354w,
+                        ./images/works/project-5/project-5-354@2x.jpg 708w,
+                        ./images/works/project-5/project-5-450.jpg    450w,
+                        ./images/works/project-5/project-5-450@2x.jpg 900w
+                      "
+                      src="./images/project-5/project-5-450.jpg"
+                      alt="Ноутбук с изображением сайта"
+                      sizes="(min-width: 768px) 354px, 450px"
+                    />
+                  </picture>
+
                   <p class="works__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -275,12 +372,30 @@
             <li class="works__item">
               <a class="works__link" href="#">
                 <div class="works__img-container">
-                  <img
-                    class="works__img"
-                    src="./images/project-6.jpg"
-                    alt="Монитор с изображением сайта"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/works/project-6/project-6-354.webp    354w,
+                        ./images/works/project-6/project-6-354@2x.webp 708w,
+                        ./images/works/project-6/project-6-450.webp    450w,
+                        ./images/works/project-6/project-6-450@2x.webp 900w
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 768px) 354px, 450px"
+                    />
+                    <img
+                      class="works__img"
+                      srcset="
+                        ./images/works/project-6/project-6-354.jpg    354w,
+                        ./images/works/project-6/project-6-354@2x.jpg 708w,
+                        ./images/works/project-6/project-6-450.jpg    450w,
+                        ./images/works/project-6/project-6-450@2x.jpg 900w
+                      "
+                      src="./images/project-6/project-6-450.jpg"
+                      alt="Ноутбук с изображением сайта"
+                      sizes="(min-width: 768px) 354px, 450px"
+                    />
+                  </picture>
                   <p class="works__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -297,12 +412,31 @@
             <li class="works__item">
               <a class="works__link" href="#">
                 <div class="works__img-container">
-                  <img
-                    class="works__img"
-                    src="./images/project-7.jpg"
-                    alt="Журнал с картинками"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/works/project-7/project-7-354.webp    354w,
+                        ./images/works/project-7/project-7-354@2x.webp 708w,
+                        ./images/works/project-7/project-7-450.webp    450w,
+                        ./images/works/project-7/project-7-450@2x.webp 900w
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 768px) 354px, 450px"
+                    />
+                    <img
+                      class="works__img"
+                      srcset="
+                        ./images/works/project-7/project-7-354.jpg    354w,
+                        ./images/works/project-7/project-7-354@2x.jpg 708w,
+                        ./images/works/project-7/project-7-450.jpg    450w,
+                        ./images/works/project-7/project-7-450@2x.jpg 900w
+                      "
+                      src="./images/project-7/project-7-450.jpg"
+                      alt="Ноутбук с изображением сайта"
+                      sizes="(min-width: 768px) 354px, 450px"
+                    />
+                  </picture>
+
                   <p class="works__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -319,12 +453,31 @@
             <li class="works__item">
               <a class="works__link" href="#">
                 <div class="works__img-container">
-                  <img
-                    class="works__img"
-                    src="./images/project-8.jpg"
-                    alt="Подвеска с надписью"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/works/project-8/project-8-354.webp    354w,
+                        ./images/works/project-8/project-8-354@2x.webp 708w,
+                        ./images/works/project-8/project-8-450.webp    450w,
+                        ./images/works/project-8/project-8-450@2x.webp 900w
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 768px) 354px, 450px"
+                    />
+                    <img
+                      class="works__img"
+                      srcset="
+                        ./images/works/project-8/project-8-354.jpg    354w,
+                        ./images/works/project-8/project-8-354@2x.jpg 708w,
+                        ./images/works/project-8/project-8-450.jpg    450w,
+                        ./images/works/project-8/project-8-450@2x.jpg 900w
+                      "
+                      src="./images/project-8/project-8-450.jpg"
+                      alt="Ноутбук с изображением сайта"
+                      sizes="(min-width: 768px) 354px, 450px"
+                    />
+                  </picture>
+
                   <p class="works__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -341,12 +494,31 @@
             <li class="works__item">
               <a class="works__link" href="#">
                 <div class="works__img-container">
-                  <img
-                    class="works__img"
-                    src="./images/project-9.jpg"
-                    alt="Ноутбук с изображением приложения"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/works/project-9/project-9-354.webp    354w,
+                        ./images/works/project-9/project-9-354@2x.webp 708w,
+                        ./images/works/project-9/project-9-450.webp    450w,
+                        ./images/works/project-9/project-9-450@2x.webp 900w
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 768px) 354px, 450px"
+                    />
+                    <img
+                      class="works__img"
+                      srcset="
+                        ./images/works/project-9/project-9-354.jpg    354w,
+                        ./images/works/project-9/project-9-354@2x.jpg 708w,
+                        ./images/works/project-9/project-9-450.jpg    450w,
+                        ./images/works/project-9/project-9-450@2x.jpg 900w
+                      "
+                      src="./images/project-9/project-9-450.jpg"
+                      alt="Ноутбук с изображением сайта"
+                      sizes="(min-width: 768px) 354px, 450px"
+                    />
+                  </picture>
+
                   <p class="works__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для

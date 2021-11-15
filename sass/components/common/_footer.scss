@@ -9,10 +9,17 @@
   background-color: getColor('bg-secondary');
 }
 
-// .footer__container {
-//   display: flex;
-//   align-items: baseline;
-// }
+.footer__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 
 // ------------------------- Logo -------------------------
 
@@ -22,7 +29,13 @@
 }
 
 .footer__address-container {
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 165px;
+  }
   // margin-right: 70px;
 }
 
@@ -64,7 +77,9 @@
 // ------------------------- Social footer -------------------------
 
 .footer__social-container {
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
   // margin-right: 93px;
 }
 
