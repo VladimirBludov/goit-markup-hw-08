@@ -64,6 +64,7 @@
 
         <button
           class="header__menu-button js-open-menu"
+          aria-label="Меню"
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
@@ -223,33 +224,73 @@
           <!-- Services list -->
           <ul class="services__list">
             <li class="services__item">
-              <img
-                class="services__img"
-                src="./images/services-img/services-1/box-1.jpg"
-                alt="Процесс разработки сайта"
-                width="370"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services-img/services-1/box-1-370.webp    1x,
+                    ./images/services-img/services-1/box-1-370@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="services__img"
+                  srcset="
+                    ./images/services-img/services-1/box-1-370.jpg    1x,
+                    ./images/services-img/services-1/box-1-370@2x.jpg 2x
+                  "
+                  src="./images/services-img/services-1/box-1-370.jpg"
+                  alt="Процесс разработки сайта"
+                  width="370"
+                  loading="lazy"
+                />
+              </picture>
+
               <p class="services__description">Десктопные приложения</p>
             </li>
             <li class="services__item">
-              <img
-                class="services__img"
-                src="./images/services-img/services-2/box-2.jpg"
-                alt="Процесс разработки мобильного приложения"
-                width="370"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services-img/services-2/box-2-370.webp    1x,
+                    ./images/services-img/services-2/box-2-370@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="services__img"
+                  srcset="
+                    ./images/services-img/services-2/box-2-370.jpg    1x,
+                    ./images/services-img/services-2/box-2-370@2x.jpg 2x
+                  "
+                  src="./images/services-img/services-2/box-2-370.jpg"
+                  alt="Процесс разработки сайта"
+                  width="370"
+                  loading="lazy"
+                />
+              </picture>
               <p class="services__description">Мобильные приложения</p>
             </li>
             <li class="services__item">
-              <img
-                class="services__img"
-                src="./images/services-img/services-3/box-3.jpg"
-                alt="Процесс разработки дизайна"
-                width="370"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services-img/services-3/box-3-370.webp    1x,
+                    ./images/services-img/services-3/box-3-370@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="services__img"
+                  srcset="
+                    ./images/services-img/services-3/box-3-370.jpg    1x,
+                    ./images/services-img/services-3/box-3-370@2x.jpg 2x
+                  "
+                  src="./images/services-img/services-3/box-3-370.jpg"
+                  alt="Процесс разработки сайта"
+                  width="370"
+                  loading="lazy"
+                />
+              </picture>
               <p class="services__description">Дизайнерские решения</p>
             </li>
           </ul>
@@ -267,25 +308,29 @@
               <picture>
                 <source
                   srcset="
+                    ./images/team/team-1/team-1-270.webp    270w,
+                    ./images/team/team-1/team-1-270@2x.webp 540w,
                     ./images/team/team-1/team-1-354.webp    354w,
                     ./images/team/team-1/team-1-354@2x.webp 708w,
                     ./images/team/team-1/team-1-450.webp    450w,
                     ./images/team/team-1/team-1-450@2x.webp 900w
                   "
-                  sizes="(min-width: 768px) 354px, 450px"
+                  sizes="(max-width: 767px) 450px, (max-width: 1199px) 354px, 270px"
                   type="image/webp"
                 />
                 <img
                   class="team__img"
                   srcset="
+                    ./images/team/team-1/team-1-270.jpg    270w,
+                    ./images/team/team-1/team-1-270@2x.jpg 540w,
                     ./images/team/team-1/team-1-354.jpg    354w,
                     ./images/team/team-1/team-1-354@2x.jpg 708w,
                     ./images/team/team-1/team-1-450.jpg    450w,
                     ./images/team/team-1/team-1-450@2x.jpg 900w
                   "
-                  src="./images/team/team-1/team-1-450.jpg"
+                  src="./images/team/team-1/team-1-270.jpg"
                   alt="Фотография сотрудника"
-                  sizes="(min-width: 768px) 354px, 450px"
+                  sizes="(max-width: 767px) 450px, (max-width: 1199px) 354px, 270px"
                 />
               </picture>
 
@@ -328,25 +373,29 @@
               <picture>
                 <source
                   srcset="
+                    ./images/team/team-2/team-2-270.webp    270w,
+                    ./images/team/team-2/team-2-270@2x.webp 540w,
                     ./images/team/team-2/team-2-354.webp    354w,
                     ./images/team/team-2/team-2-354@2x.webp 708w,
                     ./images/team/team-2/team-2-450.webp    450w,
                     ./images/team/team-2/team-2-450@2x.webp 900w
                   "
-                  sizes="(min-width: 768px) 354px, 450px"
+                  sizes="(max-width: 767px) 450px, (max-width: 1199px) 354px, 270px"
                   type="image/webp"
                 />
                 <img
                   class="team__img"
                   srcset="
+                    ./images/team/team-2/team-2-270.jpg    270w,
+                    ./images/team/team-2/team-2-270@2x.jpg 540w,
                     ./images/team/team-2/team-2-354.jpg    354w,
                     ./images/team/team-2/team-2-354@2x.jpg 708w,
                     ./images/team/team-2/team-2-450.jpg    450w,
                     ./images/team/team-2/team-2-450@2x.jpg 900w
                   "
-                  src="./images/team/team-2/team-2-450.jpg"
+                  src="./images/team/team-2/team-2-270.jpg"
                   alt="Фотография сотрудника"
-                  sizes="(min-width: 768px) 354px, 450px"
+                  sizes="(max-width: 767px) 450px, (max-width: 1199px) 354px, 270px"
                 />
               </picture>
 
@@ -389,25 +438,29 @@
               <picture>
                 <source
                   srcset="
+                    ./images/team/team-3/team-3-270.webp    270w,
+                    ./images/team/team-3/team-3-270@2x.webp 540w,
                     ./images/team/team-3/team-3-354.webp    354w,
                     ./images/team/team-3/team-3-354@2x.webp 708w,
                     ./images/team/team-3/team-3-450.webp    450w,
                     ./images/team/team-3/team-3-450@2x.webp 900w
                   "
-                  sizes="(min-width: 768px) 354px, 450px"
+                  sizes="(max-width: 767px) 450px, (max-width: 1199px) 354px, 270px"
                   type="image/webp"
                 />
                 <img
                   class="team__img"
                   srcset="
+                    ./images/team/team-3/team-3-270.jpg    270w,
+                    ./images/team/team-3/team-3-270@2x.jpg 540w,
                     ./images/team/team-3/team-3-354.jpg    354w,
                     ./images/team/team-3/team-3-354@2x.jpg 708w,
                     ./images/team/team-3/team-3-450.jpg    450w,
                     ./images/team/team-3/team-3-450@2x.jpg 900w
                   "
-                  src="./images/team/team-3/team-3-450.jpg"
+                  src="./images/team/team-3/team-3-270.jpg"
                   alt="Фотография сотрудника"
-                  sizes="(min-width: 768px) 354px, 450px"
+                  sizes="(max-width: 767px) 450px, (max-width: 1199px) 354px, 270px"
                 />
               </picture>
 
@@ -450,25 +503,29 @@
               <picture>
                 <source
                   srcset="
+                    ./images/team/team-4/team-4-270.webp    270w,
+                    ./images/team/team-4/team-4-270@2x.webp 540w,
                     ./images/team/team-4/team-4-354.webp    354w,
                     ./images/team/team-4/team-4-354@2x.webp 708w,
                     ./images/team/team-4/team-4-450.webp    450w,
                     ./images/team/team-4/team-4-450@2x.webp 900w
                   "
-                  sizes="(min-width: 768px) 354px, 450px"
+                  sizes="(max-width: 767px) 450px, (max-width: 1199px) 354px, 270px"
                   type="image/webp"
                 />
                 <img
                   class="team__img"
                   srcset="
+                    ./images/team/team-4/team-4-270.jpg    270w,
+                    ./images/team/team-4/team-4-270@2x.jpg 540w,
                     ./images/team/team-4/team-4-354.jpg    354w,
                     ./images/team/team-4/team-4-354@2x.jpg 708w,
                     ./images/team/team-4/team-4-450.jpg    450w,
                     ./images/team/team-4/team-4-450@2x.jpg 900w
                   "
-                  src="./images/team/team-4/team-4-450.jpg"
+                  src="./images/team/team-4/team-4-270.jpg"
                   alt="Фотография сотрудника"
-                  sizes="(min-width: 768px) 354px, 450px"
+                  sizes="(max-width: 767px) 450px, (max-width: 1199px) 354px, 270px"
                 />
               </picture>
 

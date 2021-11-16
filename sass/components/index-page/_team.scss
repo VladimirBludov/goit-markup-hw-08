@@ -30,19 +30,30 @@
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
-// .team__item-img {
-// }
-
 .team__content-container {
-  padding-top: 30px;
-  padding-bottom: 24px;
   text-align: center;
 
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 30px 32px;
+  }
 }
 
 .team__name {

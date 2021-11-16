@@ -1,12 +1,18 @@
 .footer {
-  // max-width: 1600px;
-  // margin-right: auto;
-  // margin-left: auto;
   padding-top: 60px;
   padding-bottom: 60px;
-  text-align: center;
 
   background-color: getColor('bg-secondary');
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .footer__container {
@@ -36,7 +42,10 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 165px;
   }
-  // margin-right: 70px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 // ------------------------- Contacts footer -------------------------
@@ -80,7 +89,10 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
-  // margin-right: 93px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .footer__social-title {

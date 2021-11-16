@@ -1,8 +1,13 @@
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
@@ -10,9 +15,15 @@
 
   color: getColor('title-primary');
   font-weight: 700;
-  // font-size: 36px;
-  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
